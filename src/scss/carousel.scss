@@ -1,0 +1,119 @@
+.testimonial-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #d81e05 0%, #490900 100%);
+  background-image: url('/src/img/section.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 25px 20px 7px 20px;
+  color: #00062b;
+
+  @include media(desktop) {
+    padding: 108px 216.78px 141.66px 233px;
+  }
+
+  .testimonial-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px 0px #0000001a;
+    padding: 20px;
+    width: 100%;
+    max-width: 408px;
+    text-align: left;
+
+    @include media(desktop) {
+      max-width: 750px;
+      padding: 29.16px 58.31px;
+    }
+  }
+
+  .testimonial-header {
+    display: flex;
+    align-items: center;
+    text-align: left;
+
+    @include media(desktop) {
+      flex-direction: row;
+      text-align: left;
+    }
+  }
+
+  .testimonial-img {
+    width: 91px;
+    height: 91px;
+    border-radius: 66.11px;
+    margin-bottom: 15px;
+    margin-right: 21px;
+
+    @include media(desktop) {
+      width: 132.23px;
+      height: 132.23px;
+      margin-right: 37.33px;
+    }
+  }
+
+  .testimonial-info {
+    display: flex;
+    flex-direction: column;
+
+    h4 {
+      font-size: 18px;
+      font-weight: bold;
+      margin: 0;
+
+      @include media(desktop) {
+        font-size: 23.3px;
+        font-weight: 500;
+        line-height: 35px;
+      }
+    }
+
+    p {
+      font-size: 14px;
+      color: #555;
+      margin: 5px 0;
+
+      @include media(desktop) {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+      }
+    }
+  }
+
+  .testimonial-social {
+    width: 33px;
+    height: 33px;
+
+    @include media(desktop) {
+      margin: 0;
+    }
+  }
+
+  .testimonial-divider {
+    display: none;
+    @include media(desktop) {
+      display: flex;
+      border: none;
+      height: 1px;
+      background-color: #ddd;
+    }
+  }
+
+  .testimonial-text {
+    width: 346px;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 2.42px 0px 0px 36px;
+
+    @include media(desktop) {
+      padding: 0;
+
+      width: 618.92px;
+      padding-top: 29.66px;
+    }
+  }
+}

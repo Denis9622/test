@@ -1,0 +1,214 @@
+.investment-section {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+  align-items: center;
+  position: relative;
+  margin-top: 118px;
+
+  @include media(desktop) {
+    margin-top: 157px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.investment-flex {
+  display: flex;
+  flex-direction: column;
+
+  @include media(desktop) {
+    flex-direction: row;
+  }
+}
+
+.placeholder-flex {
+  margin-top: 75px;
+  display: flex;
+  flex-direction: column;
+
+  @include media(desktop) {
+    flex-direction: row;
+  }
+}
+
+.investment-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  order: 1; 
+
+  @include media(desktop) {
+    order: initial;
+    text-align: left;
+    align-items: flex-start;
+  }
+}
+
+.investment-title {
+  width: 374px;
+  font-size: 24px;
+  font-weight: 400;
+  color: rgba(216, 30, 5, 1);
+  margin-bottom: 10px;
+  line-height: 28px;
+
+  @include media(desktop) {
+    width: 467px;
+    margin-top: 157px;
+    font-size: 28px;
+    line-height: 40px;
+    text-align: left;
+    margin-left: 159px;
+  }
+}
+
+.image-placeholder {
+  order: 2; 
+  width: 356px;
+  height: 187px;
+  background-color: rgba(217, 217, 217, 1);
+  margin-top: 20px;
+
+  @include media(desktop) {
+    order: initial; 
+    background-color: white;
+    width: 485px;
+    text-align: center;
+    margin-top: 75px;
+    height: 223px;
+    background-image: url('/src/img/investment/rectangle.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 88px;
+  }
+}
+
+.registration {
+  order: 3; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 52px 27px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 19px rgba(0, 0, 0, 0.19);
+  width: 354px;
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
+  margin-top: 20px;
+
+  @include media(desktop) {
+    order: initial; 
+    width: 354px;
+    margin-top: 79px;
+    margin-left: 132px;
+    box-shadow: 0px 12px 12px #d81e054a;
+    background-color: rgba(74, 74, 74, 0.82);
+  }
+}
+
+.registration-form {
+  width: 300px;
+  display: flex;
+  gap: 11px;
+  flex-direction: column;
+}
+
+.input-field {
+  width: 100%;
+  max-width: 300px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  background-color: rgba(247, 247, 247, 1);
+  padding: 10px 14px;
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+  border-radius: 4px;
+  color: rgba(129, 129, 129, 1);
+  line-height: 17.5px;
+  letter-spacing: 1px;
+  text-align: left;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #003f63;
+}
+
+.submit-button {
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 41px;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 17.5px;
+  letter-spacing: 1px;
+  background-color: #d81e05;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #005a85;
+}
+
+.imgback {
+  display: none;
+
+  @include media(desktop) {
+    display: block;
+    position: absolute;
+    width: 599px;
+    height: 536px;
+    left: 601px;
+    background-image: url('/src/img/investment/image.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.investment-purpose {
+  text-align: center;
+  margin-top: 20px;
+
+  @include media(desktop) {
+    width: 497px;
+    text-align: center;
+    margin-top: 138px;
+    margin-left: 42px;
+    font-size: 25px;
+  }
+}
+
+.nostro {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #c22821;
+
+  @include media(desktop) {
+    margin: 0;
+    text-align: left;
+    margin-right: 42px;
+  }
+}
+
+.siamo {
+  width: 369px;
+  font-size: 24px;
+  font-weight: 400;
+  color: #0e69af;
+  line-height: 28px;
+
+  @include media(desktop) {
+    text-align: left;
+    width: 497px;
+  }
+}

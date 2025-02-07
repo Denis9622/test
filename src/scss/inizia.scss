@@ -1,0 +1,147 @@
+.inizia-section {
+  margin: 58px 0px 45px 0;
+
+  @include media(desktop) {
+    margin: 92px 0px 77px 0px;
+
+  }
+}
+
+.inizia-container {
+  display: flex;
+  flex-direction: column;
+  @include media(desktop) {
+    flex-direction: row;
+  }
+}
+
+.inizia-title {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 37px;
+  margin-bottom: 33px;
+  line-height: 53.2px;
+  @include media(desktop) {
+    margin-bottom: 48px;
+  }
+}
+
+.inizia-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+
+  @include media(desktop) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-right: 31.5px;
+  }
+}
+.inizia-step:last-child {
+  margin: 0;
+}
+
+.vertical-border {
+  @include media(desktop) {
+    border-left: 1px solid rgba(238, 27, 37, 1);
+    padding-left: 30.5px;
+  }
+}
+.vertical-border:last-child {
+  @include media(desktop) {
+    padding-left: 16.5px;
+  }
+}
+
+.step-icon img {
+  @include media(desktop) {
+    margin-top: 10px;
+  }
+}
+.step-icon img:last-child {
+  @include media(desktop) {
+    padding-top: 15px;
+
+  }
+}
+
+.step-title {
+  font-size: 31px;
+  color: $_black;
+  line-height: 36.8px;
+  margin: 12px 0;
+  @include media(desktop) {
+    text-align: left;
+  }
+}
+
+.step-description {
+  font-size: 20px;
+  color: rgba(36, 36, 36, 1);
+  margin: 8px 0;
+  margin-top: 34.08px;
+
+  line-height: 22.4px;
+  @include media(desktop) {
+    font-size: 16px;
+    text-align: left;
+  }
+}
+
+.step-button {
+  color: #fff;
+  background-color: #D21D05;
+  padding: 15px 0px;
+  border: none;
+  border-radius: 15px;
+  line-height: 22px;
+  cursor: pointer;
+  // margin-bottom: 10px;
+  align-self: flex-end;
+  width: 360px;
+  margin-bottom: 45px;
+  box-shadow: 3px 4px 10px 0px #00000040;
+
+
+  @include media(desktop) {
+      margin-bottom: 10px;
+
+  }
+}
+
+.width-btn {
+  @include media(desktop) {
+    width: 333px;
+  }
+}
+
+.step-button:hover {
+  background-color: #005a85;
+}
+
+.step-1 .step-title {
+  margin-top: 52px;
+}
+
+.step-1 .step-button {
+  margin-top: 35.92px;
+}
+
+.step-2 .step-title {
+  margin-top: 30px; 
+}
+
+.step-2 .step-button {
+  margin-top: 35.92px; 
+}
+
+.step-3 .step-title {
+  margin-top: 47px; 
+}
+
+.step-3 .step-button {
+  margin-top: 41px; 
+}

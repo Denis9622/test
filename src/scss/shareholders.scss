@@ -1,0 +1,51 @@
+.shareholders-section {
+  padding: 30px 20px; 
+  text-align: center;
+  background-color: #f8f8f8;
+
+  @include media(desktop) {
+    padding: 50px 0 42px 0;
+  }
+
+  .section-title {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 28px;
+    margin-bottom: 30px;
+    line-height: 35px;
+    color: rgba(23, 23, 23, 1);
+
+
+    @include media(desktop) {
+      font-size: 36px;
+      margin-bottom: 59px;
+      line-height: 41.25px;
+    }
+  }
+
+  .shareholders-logos {
+    width: 391px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 22.5px;
+    margin: 0 auto;
+
+
+    @include media(desktop) {
+      width: 660px;
+      height: 157px;
+      gap: 38px;
+    }
+
+    img {
+      max-width: 100px;
+      height: auto;
+
+
+      @include media(desktop) {
+        max-width: 150px;
+      }
+    }
+  }
+}
+
