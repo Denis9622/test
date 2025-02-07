@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   background: linear-gradient(180deg, #d81e05 0%, #490900 100%);
-  background-image: url('./src/img/section.jpg');
+  background-image: url('/src/img/section.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -17,7 +17,7 @@
   .testimonial-card {
     background: #fff;
     border-radius: 10px;
-    box-shadow: 0px 5px 10px 0px #0000001a;
+    box-shadow: 0px 5px 10px 0px hsla(0, 0%, 0%, 0.102);
     padding: 20px;
     width: 100%;
     max-width: 408px;
