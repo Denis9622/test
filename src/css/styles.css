@@ -383,7 +383,7 @@ img {
     width: 599px;
     height: 536px;
     left: 601px;
-    background-image: url("/src/img/investment/image.png");
+    background-image: url("../img/investment/image.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -637,7 +637,7 @@ img {
   left: 23px;
   width: 390px;
   height: 935.9px;
-  background-image: url("/src/img/dobiti/background_mob.png");
+  background-image: url("../img/dobiti/background_mob.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -648,7 +648,7 @@ img {
     width: 680px;
     height: 657px;
     left: 462px;
-    background-image: url("/src/img/dobiti/background.jpg");
+    background-image: url("../img/dobiti/background.jpg");
   }
 }
 
@@ -774,7 +774,7 @@ img {
   justify-content: center;
   align-items: center;
   background: linear-gradient(180deg, #d81e05 0%, #490900 100%);
-  background-image: url("/src/img/section.jpg");
+  background-image: url("../img/section.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
