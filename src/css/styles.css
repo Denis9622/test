@@ -292,7 +292,7 @@ img {
     text-align: center;
     margin-top: 75px;
     height: 223px;
-    background-image: url("/src/img/investment/rectangle.png");
+    background-image: url("../img/investment/rectangle.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -774,7 +774,7 @@ img {
   justify-content: center;
   align-items: center;
   background: linear-gradient(180deg, #d81e05 0%, #490900 100%);
-  background-image: url("../img/section.jpg");
+  background-image: url("../img/sectionsl.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
