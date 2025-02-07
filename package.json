@@ -13,10 +13,10 @@
   "author": "Denys Zinchenko",
   "license": "ISC",
   "dependencies": {
+    "sass": "^1.83.4",
     "swiper": "^11.2.2"
   },
   "devDependencies": {
-    "gh-pages": "^5.0.0",
-    "sass": "^1.84.0"
+    "gh-pages": "^5.0.0"
   }
 }
