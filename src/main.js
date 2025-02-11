@@ -1,4 +1,3 @@
-import './scss/styles.scss';
 import './js/load';
 import './js/slider-init';
 
