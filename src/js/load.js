@@ -1,4 +1,5 @@
-// load.js
+import { initSliders } from './slider-init.js';
+
 document.addEventListener('DOMContentLoaded', () => {
   const loadElements = document.querySelectorAll('load[src]');
 
@@ -13,13 +14,15 @@ document.addEventListener('DOMContentLoaded', () => {
       const wrapper = document.createElement('div');
       wrapper.innerHTML = content;
 
-      // Replace <load> tag with fetched content
+      // Заменяем <load> на загруженный контент
       loadElement.replaceWith(wrapper);
+
+      // Если загружается слайдер, инициализируй слайдеры
+      if (src.includes('slider.html') || src.includes('dobiti.html')) {
+        initSliders(); // Вызов функции инициализации
+      }
     } catch (error) {
       console.error('Error loading file:', error);
-      loadElement.replaceWith(
-        `<div class="load-error">Error loading ${src}</div>`
-      );
     }
   });
 });

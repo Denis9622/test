@@ -2,8 +2,11 @@
   <div class="dobiti-container">
     <div class="imgdobiti"></div>
     <picture class="dobiti-img">
-      <source srcset="./src/img/dobiti/man_mob.png" media="(max-width: 767px)" />
-      <source srcset="./src/img/dobiti/man.png" media="(min-width: 768px)"" />
+      <source
+        srcset="./src/img/dobiti/man_mob.png"
+        media="(max-width: 767px)"
+      />
+      <source srcset="./src/img/dobiti/man.png" media="(min-width: 768px)" />
       <img src="./src/img/dobiti/man.png" alt="woman in karniaval dress" />
     </picture>
     <div class="dobiti-text">
@@ -37,20 +40,15 @@
   <div class="dobiti-info">
     <div class="dobiti-box">
       <div class="dobiti-chart">
-        <picture class="dobiti-back">
-          <source
-            srcset="./src/img/dobiti/background_shadowmob.png"
-            media="(max-width: 767px)"
-          />
-          <source
-            srcset="./src/img/dobiti/background_shadow.png"
-            media="(min-width: 768px)"
-          />
-          <img
-            src="./src/img/dobiti/background_shadow.png"
-            alt="background shadow"
-          />
-        </picture>
+        <div class="slider-container">
+          <input type="text" id="range-slider-months" />
+
+          <input type="text" id="range-slider-money" />
+          <!-- Кнопка для отображения возможного кредита -->
+        </div>
+        <button class="calculate-btn">
+          MOGUĆA DOBIT: <span id="calculated-amount">8600</span>
+        </button>
       </div>
     </div>
     <div class="dobiti-stats">
