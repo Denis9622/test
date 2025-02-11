@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: '/test/', // Указано название репозитория
+  base: '/', // Корень сайта
   server: {
     hmr: {
       overlay: false,
