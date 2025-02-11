@@ -1,10 +1,8 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: '/test/', // Указано название репозитория
-  server: {
-    hmr: {
-      overlay: false,
-    },
+  base: '/test/', // замените на имя вашего репозитория
+  build: {
+    outDir: 'dist',
   },
 });
