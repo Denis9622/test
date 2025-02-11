@@ -1,0 +1,22 @@
+/* Error: Undefined mixin.
+ *    ,
+ * 19 | /   @include media(desktop) {
+ * 20 | |     width: 464px;
+ * 21 | |     height: 464px;
+ * 22 | |     top: 72px;
+ * 23 | |     left: 58px;
+ * 24 | |     background-color: transparent;
+ * 25 | \   }
+ *    '
+ *   src\scss\dobiti.scss 19:3  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 19 \2502  \250c    @include media(desktop) {\a 20 \2502  \2502      width: 464px;\a 21 \2502  \2502      height: 464px;\a 22 \2502  \2502      top: 72px;\a 23 \2502  \2502      left: 58px;\a 24 \2502  \2502      background-color: transparent;\a 25 \2502  \2514    }\a    \2575 \a   src\\scss\\dobiti.scss 19:3  root stylesheet";
+}
