@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "sass src/scss:src/css --style compressed",
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
     "sass": "sass --watch src/scss:src/css",
     "deploy": "gh-pages -d src"
   },
@@ -14,6 +16,7 @@
   "license": "ISC",
   "dependencies": {
     "gh-pages": "^4.0.0",
-    "sass": "^1.32.8"
+    "sass": "^1.32.8",
+    "vite": "^6.1.0"
   }
 }
