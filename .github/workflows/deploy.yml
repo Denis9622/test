@@ -10,20 +10,29 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # Шаг 1: Клонирование репозитория
       - name: Checkout code
         uses: actions/checkout@v2
 
+      # Шаг 2: Установка Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 18
 
+      # Шаг 3: Установка зависимостей
       - name: Install dependencies
         run: npm install
 
+      # Шаг 4: Исправление прав доступа (если необходимо)
+      - name: Fix Vite permissions
+        run: chmod +x ./node_modules/.bin/vite
+
+      # Шаг 5: Сборка проекта
       - name: Build project
         run: npx vite build
 
+      # Шаг 6: Деплой на GitHub Pages
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
